@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>ErikEJ.SqlCeBulkCopy</id>
-    <version>2.1.6.15</version>
+    <version>2.1.6.16-alpha</version>
     <authors>http://erikej.blogspot.com</authors>
     <owners>http://erikej.blogspot.com</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,11 +10,20 @@
     <projectUrl>http://sqlcebulkcopy.codeplex.com/</projectUrl>
     <description>.NET Library for loading data fast (doing bulk inserts) into a SQL Server Compact database file. Attempts to mimic the SqlClient SqlBulkCopy API.</description>
     <summary>.NET Library for loading data fast (doing bulk inserts) into a SQL Server Compact database file.</summary>
-    <releaseNotes>Enabled use of user provided SqlCeTransaction with KeepIdentity</releaseNotes>
+    <releaseNotes>Custom package by tgmayfield to get abort behavior</releaseNotes>
     <language>en-US</language>
     <tags>sql bulk insert load data sqlce bulkcopy</tags>
     <dependencies>
       <dependency id="Microsoft.SqlServer.Compact" version="4.0.8876.1" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Release\ErikEJ.SqlCe40.dll" target="lib\net35" />
+    <file src="bin\Release\ErikEJ.SqlCe40.XML" target="lib\net35" />
+    <file src="bin\Release\Salient.Data.dll" target="lib\net35" />
+
+    <file src="bin\Release\ErikEJ.SqlCe40.dll" target="lib\net40" />
+    <file src="bin\Release\ErikEJ.SqlCe40.XML" target="lib\net40" />
+    <file src="bin\Release\Salient.Data.dll" target="lib\net40" />
+  </files>
 </package>
